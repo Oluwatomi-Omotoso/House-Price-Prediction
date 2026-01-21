@@ -8,7 +8,7 @@ print(sklearn.__version__)
 # Load the FULL pipeline (preprocessing + model)
 model_pipeline = joblib.load("./model/model.pkl")
 
-st.title("🚢How much is that home gonna be?")
+st.title("🏠How much is that home gonna be?")
 st.write(
     "Let's fill in the details below to find out just how much this house should be."
 )
@@ -99,3 +99,4 @@ if st.button("Predict House Price"):
         st.error("😔 **This might fit your budget.**")
 
     st.write(f"Here's the price by the way, love. ${prediction}")
+
